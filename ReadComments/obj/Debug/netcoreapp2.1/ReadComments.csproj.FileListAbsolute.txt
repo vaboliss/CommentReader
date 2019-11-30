@@ -1,0 +1,11 @@
+C:\Users\vaain\source\repos\ReadComments\ReadComments\bin\Debug\netcoreapp2.1\ReadComments.deps.json
+C:\Users\vaain\source\repos\ReadComments\ReadComments\bin\Debug\netcoreapp2.1\ReadComments.runtimeconfig.json
+C:\Users\vaain\source\repos\ReadComments\ReadComments\bin\Debug\netcoreapp2.1\ReadComments.runtimeconfig.dev.json
+C:\Users\vaain\source\repos\ReadComments\ReadComments\bin\Debug\netcoreapp2.1\ReadComments.dll
+C:\Users\vaain\source\repos\ReadComments\ReadComments\bin\Debug\netcoreapp2.1\ReadComments.pdb
+C:\Users\vaain\source\repos\ReadComments\ReadComments\obj\Debug\netcoreapp2.1\ReadComments.csprojAssemblyReference.cache
+C:\Users\vaain\source\repos\ReadComments\ReadComments\obj\Debug\netcoreapp2.1\ReadComments.csproj.CoreCompileInputs.cache
+C:\Users\vaain\source\repos\ReadComments\ReadComments\obj\Debug\netcoreapp2.1\ReadComments.AssemblyInfoInputs.cache
+C:\Users\vaain\source\repos\ReadComments\ReadComments\obj\Debug\netcoreapp2.1\ReadComments.AssemblyInfo.cs
+C:\Users\vaain\source\repos\ReadComments\ReadComments\obj\Debug\netcoreapp2.1\ReadComments.dll
+C:\Users\vaain\source\repos\ReadComments\ReadComments\obj\Debug\netcoreapp2.1\ReadComments.pdb
