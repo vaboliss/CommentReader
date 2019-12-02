@@ -8,29 +8,41 @@ namespace ReadComments
 {
     public class Extractor
     {
+        #region Variables
         private string path; // path of txt file with comments
         private string sourcePath;
-        private List<List<string>> comments;
-
+        private List<List<string>> comments; // List<List<string>> to make it easier to print when the comments are multiline
+        #endregion
+        #region Constructor
+        /// <summary>
+        /// Constructor takes a path where do you want your txt file to be and also creates a file
+        /// </summary>
         public Extractor(string path)
         {
             this.path = path + "\\Comments.txt";
-
-                var fs = File.Create(this.path);
-                fs.Close();
-            
+            var fs = File.Create(this.path);
+            fs.Close();
 
         }
-
+        #endregion
+        #region Extract
+        /// <summary>
+        /// Method used to get all comments from one file and write them to the comments.txt file.
+        /// To make it simpler I added 3 methods. 
+        /// </summary>
         public void Extract(string SourcePath)
         {
             comments = new List<List<string>>();
             this.sourcePath = SourcePath;
-            WriteHeader();
+            WriteHeader(); 
             FindComments();
             WriteComents();
         }
-
+        #endregion
+        #region WriteComments
+        /// <summary>
+        /// Writes Comments to comment txt file
+        /// </summary>
         private void WriteComents()
         {
             using (StreamWriter sw = new StreamWriter(path, true))
@@ -56,6 +68,13 @@ namespace ReadComments
                 }
             }
         }
+        #endregion
+        #region FindComments
+        /// <summary>
+        /// Finds comments and put them into the comment list.
+        /// Also trying to escape some common problems like @"//comment", "//comment",""ads//asdads"", and so on
+        /// </summary>
+
 
         private void FindComments()
         {
@@ -165,11 +184,11 @@ namespace ReadComments
                     
                 }
             }
-        private void GetComment(string line)
-        {
-           
-        }
-
+        #endregion
+        #region WriteHeader
+        /// <summary>
+        /// Writes a header to comment.txt file like ====filename.css====
+        /// </summary>
         private void WriteHeader()
         {
            
@@ -179,5 +198,6 @@ namespace ReadComments
                 sw.WriteLine("=====" + fileName + "====="); // Writes Header to txt file
             }
         }
+        #endregion
     }
 }
