@@ -14,7 +14,7 @@ namespace ReadComments
         static void Main(string[] args)
         {
 
-            IEnumerable<string> files = Helper.FindCsFiles(path); // gets all the .cs files
+            IEnumerable<string> files = Helper.FindCsFiles(sourcePath); // gets all the .cs files
 
             Extractor ext = new Extractor(path); // Create Extractor object and give it location where you want your comment.txt file to be
             foreach (String element in files)
