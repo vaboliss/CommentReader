@@ -30,10 +30,10 @@ namespace ReadComments
         /// Method used to get all comments from one file and write them to the comments.txt file.
         /// To make it simpler I added 3 methods. 
         /// </summary>
-        public void Extract(string SourcePath)
+        public void Extract(string sourcePath)
         {
             comments = new List<List<string>>();
-            this.sourcePath = SourcePath;
+            this.sourcePath = sourcePath;
             WriteHeader(); 
             FindComments();
             WriteComents();
